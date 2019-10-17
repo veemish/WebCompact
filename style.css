@@ -1,0 +1,16 @@
+.container{
+    box-sizing:border-box;
+    border: 1px black solid;
+   width: 700px;
+    height: 550px;
+}
+
+.center{
+    text-align: center;
+}
+
+.about{
+ text-emphasis: none;
+ text-decoration:  none;
+ 
+}

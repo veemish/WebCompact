@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebCompact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="center">WebCompact Bug Report Form</h3>
+      <div class="buttons">
+        <button
+          class="button"
+          onclick="openPage('bugreport',this,'rgba(64, 64, 64, 1)')"
+        >
+          Bug Report
+        </button>
+        <div>
+          <button
+            class="button"
+            onclick="openPage('moreinfo',this,'rgba(64, 64, 64, 1)')"
+            id="buttonopen"
+          >
+            More info
+          </button>
+        </div>
+        <div>
+          <button
+            class="button"
+            onclick="openPage('aboutweb',this,'rgba(64, 64, 64, 1)')"
+          >
+            About WebCompact
+          </button>
+          <br />
+        </div>
+      </div>
+      <br />
+      <div id="bugreport" class="buttoncontent">
+        <form action="get">
+          <h5 class="url">site Url here(important)</h5>
+          <input type="url" /> <br />
+          <h4>Your bug description</h4>
+          <input type="radio" /> Site doesnt open <br />
+          <input type="radio" /> Design Broken <br />
+          <input type="radio" /> Site is not usable <br />
+          <input type="radio" /> Video doesnt play <br />
+          <input type="radio" /> Something else <br />
+          <h5>Write the Summary of the problem Describe it in short</h5>
+          <input type="text" /> <br />
+          <h5>More details of the bug</h5>
+          <input type="text" name="" id="" />
+        </form>
+      </div>
+      <div id="moreinfo" class="buttoncontent">
+        <form action="get">
+          <!---
+          Your current Location
+        <input type="text" name="" id=""> --->
+          Have you tried in another Site?
+          <input type="radio" name="" id="" />Yes 
+          <br>
+          <input type="radio" name="" id="" />No 
+          <br>
+          Detail on what happened
+          <input type="text" name="" id="" />
+          <br>
+
+          Is your information correct?
+          <input type="text" name="" id="" /> web broser
+          <br>
+          <input type="text" name="" id="" />os Screen short
+          <br>
+          <input type="image" src="" alt="" />
+        </form>
+      </div>
+
+      <div id="aboutweb" class="buttoncontent">
+        <form action="get">
+          <h2>About</h2>
+          <p>
+            Every single day, developers are building new sites and applications
+            and creating innovative ways for users to consume content on the
+            web. People expect websites to work regardless of the device or
+            browser they are using. Sometimes it can be challenging for website
+            developers to keep up with the countless ways we’re able to browse
+            the internet today—computers, phones, tablets, TVs and more.
+          </p>
+          <input type="checkbox" name="" id="" /> By checking you agree the
+          information you provided is genuine and valid will help to solve the
+          problem you have addressed above.
+        </form>
+      </div>
+
+<div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

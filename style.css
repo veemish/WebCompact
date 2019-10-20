@@ -1,0 +1,80 @@
+*{
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+
+.container{
+    box-sizing:border-box;
+    border: 1px black solid;
+    background-color: #ffc900;
+    height: 600px;
+    width: 580px;
+    
+}
+
+.buttoncontent{
+    display: none;
+}
+.button{
+    cursor: pointer;
+}
+
+#aboutweb{
+    background-color: #ffc900;
+}
+#bugreport{
+    background-color: #ffc900;
+}
+#moreinfo{
+    background-color: #ffc900;
+}
+
+.center{
+    text-align: center;
+    text-decoration: none;
+}
+
+.about{
+ text-emphasis: none;
+ text-decoration:  none;
+ table-layout: auto;
+ width: 50px;
+ border: 1px solid rgb(168, 162, 162);
+ 
+}
+.button{
+float: left;
+background:rgba(64, 64, 64, 1);
+border: none;
+padding: 19px 45px;
+color:  #ffc900;
+}
+.buttons{
+    margin-left: 5px;
+}
+.url{
+    margin-right: 20px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #3f3a3a;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: rgb(122, 122, 91);
+  }

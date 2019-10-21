@@ -2,7 +2,9 @@
     box-sizing: content-box;
     font-family: 'Open Sans', sans-serif; 
 }
-
+ .part{
+     margin-bottom: 5px;
+ }
 
 .container{
     box-sizing:border-box;

@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id = "form">
       <h3 class="center">WebCompact Bug Report Form</h3>
       <div class="buttons">
         <button
@@ -39,22 +39,20 @@
           >
             About WebCompact
           </button>
-          <br />
         </div>
       </div>
-      <br />
       <div id="bugreport" class="buttoncontent">
         <form action="get">
-          <h5 class="url">site Url here(important)</h5>
-          <input type="url" /> <br />
-          <h4>Your bug description</h4>
-          <input type="radio" /> Site doesnt open <br />
+          <h5 class="url" >site Url here(important)</h5>
+          <input type="url"  class="show"/> 
+          <h5>Your bug description</h5>
+          <input type="radio"  class="show"/> Site doesnt open <br />
           <input type="radio" /> Design Broken <br />
           <input type="radio" /> Site is not usable <br />
           <input type="radio" /> Video doesnt play <br />
           <input type="radio" /> Something else <br />
           <h5>Write the Summary of the problem Describe it in short</h5>
-          <input type="text" /> <br />
+          <input type="text" /> 
           <h5>More details of the bug</h5>
           <input type="text" name="" id="" />
         </form>
@@ -65,20 +63,18 @@
           Your current Location
         <input type="text" name="" id=""> --->
           Have you tried in another Site?
+          <br>
           <input type="radio" name="" id="" />Yes 
           <br>
           <input type="radio" name="" id="" />No 
-          <br>
-          Detail on what happened
+         <h5> Detail on what happened</h5> 
           <input type="text" name="" id="" />
-          <br>
 
-          Is your information correct?
-          <input type="text" name="" id="" /> web broser
-          <br>
-          <input type="text" name="" id="" />os Screen short
-          <br>
-          <input type="image" src="" alt="" />
+          <h5> Is your information correct? </h5>
+           <h5> WebBrowser</h5>
+          <input type="text" name="" id="" /> 
+         <h5>Os type</h5> <input type="text" />
+    
         </form>
       </div>
 

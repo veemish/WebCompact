@@ -1,5 +1,5 @@
-118 lines (113 sloc)  3.88 KB
- 
+118 lines (113 sloc) 3.88 KB
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="container" id = "form">
+    <div class="container" id="form">
       <h3 class="center">WebCompact Bug Report Form</h3>
       <div class="buttons">
         <button
@@ -41,45 +41,40 @@
           </button>
         </div>
       </div>
-      <div id="bugreport" class="buttoncontent">
-        <form action="get">
-          <h5 class="url" >site Url here(important)</h5>
-          <input type="url"  class="show"/> 
-          <h5>Your bug description</h5>
-          <input type="radio"  class="show"/> Site doesnt open <br />
+      <form action="get" id="thisform">
+        <div id="bugreport" class="buttoncontent">
+          <h5 class="url">site Url here(important)</h5>
+          <input type="url" class="show" />
+          <h5 class="first">Your bug description</h5>
+          <input type="radio" class="show" /> Site doesnt open <br />
           <input type="radio" /> Design Broken <br />
           <input type="radio" /> Site is not usable <br />
           <input type="radio" /> Video doesnt play <br />
           <input type="radio" /> Something else <br />
-          <h5>Write the Summary of the problem Describe it in short</h5>
-          <input type="text" /> 
+          <h5> Write the Summary of the problem Describe it in short</h5>
+          <input type="text" />
           <h5>More details of the bug</h5>
           <input type="text" name="" id="" />
-        </form>
-      </div>
-      <div id="moreinfo" class="buttoncontent">
-        <form action="get">
+        </div>
+        <div id="moreinfo" class="buttoncontent">
           <!---
-          Your current Location
-        <input type="text" name="" id=""> --->
+                    Your current Location
+                  <input type="text" name="" id=""> --->
           Have you tried in another Site?
-          <br>
-          <input type="radio" name="" id="" />Yes 
-          <br>
-          <input type="radio" name="" id="" />No 
-         <h5> Detail on what happened</h5> 
+          <br />
+          <input type="radio" name="" id="" />Yes
+          <br />
+          <input type="radio" name="" id="" />No
+          <h5>Detail on what happened</h5>
           <input type="text" name="" id="" />
 
-          <h5> Is your information correct? </h5>
-           <h5> WebBrowser</h5>
-          <input type="text" name="" id="" /> 
-         <h5>Os type</h5> <input type="text" />
-    
-        </form>
-      </div>
-
-      <div id="aboutweb" class="buttoncontent">
-        <form action="get">
+          <h5>Is your information correct?</h5>
+          <h5>WebBrowser</h5>
+          <input type="text" name="" id="" />
+          <h5>Os type</h5>
+          <input type="text" />
+        </div>
+        <div id="aboutweb" class="buttoncontent">
           <h2>About</h2>
           <p>
             Every single day, developers are building new sites and applications
@@ -92,24 +87,28 @@
           <input type="checkbox" name="" id="" /> By checking you agree the
           information you provided is genuine and valid will help to solve the
           problem you have addressed above.
-        </form>
-      </div>
+        </div>
+        <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                Previous
+              </button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+    
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+      </form>
 
-<div style="overflow:auto;">
-    <div style="float:right;">
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      
     </div>
-  </div>
-  
-  <!-- Circles which indicates the steps of the form: -->
-  <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-  </div>
-    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>

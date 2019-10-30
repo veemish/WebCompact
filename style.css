@@ -2,6 +2,7 @@
     box-sizing: content-box;
     font-family: 'Open Sans', sans-serif; 
 }
+
  .part{
      margin-bottom: 5px;
     
@@ -51,15 +52,15 @@
 float: left;
 background:rgba(64, 64, 64, 1);
 border: none;
-padding: 19px 45px;
-color:  #ffc900;
+padding: 23px 47px;
+color:  #ffc900;https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_form_steps
 }
 .buttons{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .url{
     margin-right: 20px;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 /* Make circles that indicate the steps of the form: */
